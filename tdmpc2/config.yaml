@@ -8,10 +8,10 @@ obs: state
 # evaluation
 checkpoint: ???
 eval_episodes: 10
-eval_freq: 50000
+eval_freq: 10000
 
 # training
-steps: 10_000_000
+steps: 1_000_000
 batch_size: 256
 reward_coef: 0.1
 value_coef: 0.1
@@ -59,7 +59,7 @@ latent_dim: 512
 task_dim: 96
 num_q: 5
 dropout: 0.01
-simnorm_dim: 8
+simnorm_dim: 8  # number of "classes"
 
 # logging
 wandb_project: ???
