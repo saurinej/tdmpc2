@@ -27,6 +27,19 @@
                 "steps=7000000"
             ],
             "console": "integratedTerminal"
+        },
+        {
+            "name": "LL",
+            "type": "debugpy",
+            "python": "/opt/conda/envs/tdmpc2/bin/python",
+            "cwd": "/root/repos/tdmpc2",
+            "request": "launch",
+            "program": "tdmpc2/train.py",
+            "args": [
+                "task=lunar_lander",
+                "steps=1000000"
+            ],
+            "console": "integratedTerminal"
         }
     ]
 }
